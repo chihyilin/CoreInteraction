@@ -1,0 +1,84 @@
+<bookcase>
+
+<shelf id="top-shelf">>
+
+<book id="Lipstick: A Celebration of the World's Favorite Cosmetic."></book>
+
+<book id="Read my lips: a cultural h istory of lipstick."></book>
+
+</shelf>
+
+<shelf id="bottom-shelf">>
+
+<book id="Fresh lipstick: redressing fashion and feminism."></book>
+
+<book id=""Ideas & Trends; Enough About Feminism. Should I Wear Lipstick?"></book>
+
+</shelf>
+
+</bookcase>
+
+
+
+#Lipstick: A Celebration of the World's Favorite Cosmetic.{
+
+language: english;
+
+rating: 4;
+
+how-i-found: researchpaper;
+
+relate: feminism;
+
+pages: 228;
+
+publish-date: 1999;
+
+}
+
+#Lipstick: Read my lips: a cultural h istory of lipstick.{
+
+language: english;
+
+rating: 3.7;
+
+how-i-found: researchpaper;
+
+relate: feminism, social science;
+
+publish-date: 1998;
+
+}
+
+#Lipstick: Fresh lipstick: redressing fashion and feminism.{
+
+language: english;
+
+rating: 4.5;
+
+how-i-found: researchpaper;
+
+relate: feminism;
+
+publish-date: 2006;
+
+}
+
+#Lipstick: "Ideas & Trends; Enough About Feminism. Should I Wear Lipstick?{
+
+language: english;
+
+rating: 4;
+
+how-i-found: researchpaper;
+
+relate: feminism, fashion, history;
+
+publish-date: 1999;
+
+}
+
+
+query: [title~=“lipstick”]
+
+result: What is it about lipstick?, Lipstick: It's an icon, Should I Wear Lipstick?, Fresh lipstick
