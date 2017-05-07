@@ -1,23 +1,39 @@
 <bookcase>
 
-<shelf id="top-shelf">>
-
-<book id="Lipstick: A Celebration of the World's Favorite Cosmetic."></book>
-
-<book id="Read my lips: a cultural h istory of lipstick."></book>
-
-</shelf>
-
-<shelf id="bottom-shelf">>
-
-<book id="Fresh lipstick: redressing fashion and feminism."></book>
-
-<book id=""Ideas & Trends; Enough About Feminism. Should I Wear Lipstick?"></book>
-
-</shelf>
+  <shelf class="top-shelf">
+  
+      <book id="Lipstick: A Celebration of the World's Favorite Cosmetic.">
+        <p>publish-date: 1999</p>
+      </book>
+    
+      <book id="Read my lips: a cultural history of lipstick.">
+        <p>publish-date: 1998</p>
+      </book>
+  
+  </shelf>
+  
+    <shelf class="bottom-shelf">
+  
+      <book id="Fresh lipstick: redressing fashion and feminism.">
+        <p>publish-date: 2006</p>
+      </book>
+  
+      <book id=""Ideas & Trends; Enough About Feminism. Should I Wear Lipstick?">
+        <p>publish-date: 1999<p/>
+      </book>
+  
+  </shelf>
 
 </bookcase>
 
+
+.top-shelf{
+  about: history;
+}
+
+.bottom-shelf{
+  about: feminism;
+}
 
 
 #Lipstick: A Celebration of the World's Favorite Cosmetic.{
@@ -32,7 +48,6 @@ relate: feminism;
 
 pages: 228;
 
-publish-date: 1999;
 
 }
 
@@ -45,8 +60,6 @@ rating: 3.7;
 how-i-found: researchpaper;
 
 relate: feminism, social science;
-
-publish-date: 1998;
 
 }
 
@@ -81,4 +94,30 @@ publish-date: 1999;
 
 query: [title~=“lipstick”]
 
-result: What is it about lipstick?, Lipstick: It's an icon, Should I Wear Lipstick?, Fresh lipstick
+result: What is it about lipstick?, Lipstick: It's an icon, Should I Wear Lipstick?, Fresh lipstick;
+        Fresh lipstick: redressing fashion and feminism.;
+        Ideas & Trends; Enough About Feminism. Should I Wear Lipstick?;
+
+
+query: [lang|=li]
+
+result: Lipstick; 
+        lips;
+
+query: #Lipstick: A Celebration of the World's Favorite Cosmetic.::last-word
+
+result: 1999; 
+
+
+query: #Read my lips: a cultural history of lipstick.::first-letter
+
+result: p; 
+
+
+query: book p
+
+result: publish-date: 1999;
+        publish-date: 1998;
+        publish-date: 2006;
+        publish-date: 1999;
+
